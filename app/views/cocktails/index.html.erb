@@ -1,0 +1,24 @@
+<h1>My cocktails</h1>
+<%= link_to "Créer cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Edit?</th>
+      <th scope="col">Show?</th>
+    </tr>
+  </thead>
+<tbody>
+  <% @cocktails.each do |cocktail| %>
+    <tr>
+      <td><%= cocktail.id %></td>
+      <td><%= cocktail.name %></td>
+      <td><strong>X</strong></td>
+      <td><a href="<%= cocktail_path(cocktail.id) %>" class="btn btn-info btn-block">Show</a></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+

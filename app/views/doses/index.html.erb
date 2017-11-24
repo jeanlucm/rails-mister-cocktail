@@ -1,0 +1,8 @@
+  <h3>Recette actuelle</h3>
+  <%= simple_form_for @dose do |f| %>
+    <% @cocktail.doses.each do |dose| %>
+      <%=  f.label :dose.description, "Desc: " %>
+    <% end %>
+  <% end %>
+
+

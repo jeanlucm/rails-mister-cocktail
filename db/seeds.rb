@@ -11,3 +11,4 @@ Ingredient.create(name: "egg")
 Ingredient.create(name: "rhum")
 Ingredient.create(name: "vodka")
 Ingredient.create(name: "Tomato juice")
+puts 'fin'
